@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký</title>
+</head>
+<body>
+<h1>Đăng Ký</h1>
+<form th:action="@{/nguoi-dung/dang-ky}" th:object="${nguoiDung}" method="post">
+    <div>
+        <label>Tên Đăng Nhập:</label>
+        <input type="text" th:field="*{tenDangNhap}" required>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="email" th:field="*{email}" required>
+    </div>
+    <div>
+        <label>Mật Khẩu:</label>
+        <input type="password" th:field="*{matKhau}" required>
+    </div>
+    <div>
+        <button type="submit">Đăng Ký</button>
+    </div>
+</form>
+</body>
+</html>

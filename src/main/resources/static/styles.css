@@ -1,0 +1,103 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    z-index: 999; /* Đảm bảo navbar luôn ở trên cùng */
+    position: relative;
+}
+
+/*.carousel {*/
+/*    padding-top: 56px; !* Điều chỉnh để tạo khoảng cách cho navbar *!*/
+/*}*/
+
+/*.carousel-item img {*/
+/*    height: 60vh; !* Chiều cao hình ảnh trong carousel, bạn có thể điều chỉnh nếu cần *!*/
+/*    object-fit: cover;*/
+/*}*/
+
+footer {
+    background-color: #333;
+    padding: 20px;
+}
+
+.about-section {
+    background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #4a5568;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: #4a5568;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer .d-flex {
+    justify-content: center; /* Căn giữa các biểu tượng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 15px; /* Khoảng cách giữa các biểu tượng */
+}
+
+footer .d-flex a {
+    font-size: 1.5rem; /* Kích thước biểu tượng */
+    color: #fff; /* Màu sắc biểu tượng */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu sắc khi di chuột */
+}
+
+footer .d-flex a:hover {
+    color: #ccc; /* Màu sắc khi di chuột qua biểu tượng */
+}
+
+/* Các phần tử khác của footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+footer .text-uppercase {
+    font-weight: bold;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .list-unstyled a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .list-unstyled a:hover {
+    text-decoration: underline;
+}
