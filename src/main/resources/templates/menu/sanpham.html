@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:c="http://www.w3.org/1999/html">
+<head th:replace="layout/head :: head"></head>
+
+<body>
+<div th:replace="layout/header :: header"></div>
+
+<div class="container">
+    <h1 class="my-4 text-center">Our Products</h1>
+    <div class="row product-grid">
+        <!-- Product Card Example -->
+
+        <div class="col-md-4 mb-4">
+            <div class="product-card card">
+                <img src="https://via.placeholder.com/400x200" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat Product Card for each product -->
+        <!-- Use Thymeleaf or your preferred templating engine to loop through products -->
+    </div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<div th:replace="layout/footer :: footer"></div>
+</body>
+</html>
