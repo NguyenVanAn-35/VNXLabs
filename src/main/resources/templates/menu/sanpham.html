@@ -6,26 +6,141 @@
 <div th:replace="layout/header :: header"></div>
 
 <div class="container">
-    <h1 class="my-4 text-center">Our Products</h1>
+    <h1 class="my-4 text-center text-primary">Our Products</h1>
     <div class="row product-grid">
-        <!-- Product Card Example -->
-
+        <!-- Product Card 1 -->
         <div class="col-md-4 mb-4">
-            <div class="product-card card">
-                <img src="https://via.placeholder.com/400x200" alt="Product Image">
+            <div class="product-card card shadow-sm rounded">
+                <img src="/img/AIHealthcareSystem.jpg" class="card-img-top rounded-top" alt="AI in Healthcare">
                 <div class="card-body">
-                    <h5 class="card-title">Product Name</h5>
-                    <p class="card-text"></p>
-                    <a href="#" class="btn btn-primary">View Details</a>
+                    <h5 class="card-title font-weight-bold">AI in Healthcare</h5>
+                    <p class="card-text text-muted">Explore how artificial intelligence is revolutionizing healthcare by improving diagnostic accuracy and optimizing treatment strategies.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
                 </div>
             </div>
         </div>
-        <!-- Repeat Product Card for each product -->
-        <!-- Use Thymeleaf or your preferred templating engine to loop through products -->
+
+        <!-- Product Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="product-card card shadow-sm rounded">
+                <img src="/img/ClimateChangeDataAnalysis.jpg" class="card-img-top rounded-top" alt="Climate Change Data">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Climate Change Data Analysis</h5>
+                    <p class="card-text text-muted">This product involves deep analysis of environmental data to predict the impact of climate change on different ecosystems around the globe.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="product-card card shadow-sm rounded">
+                <img src="/img/NanoMaterialsinMedicine.jpg" class="card-img-top rounded-top" alt="Nano Materials">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Nano Materials in Medicine</h5>
+                    <p class="card-text text-muted">Our research into nanomaterials and their applications in medicine, focusing on new drug delivery systems and advanced medical devices.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="product-card card shadow-sm rounded">
+                <img src="/img/AdvancedRobotics.jpg" class="card-img-top rounded-top" alt="Advanced Robotics">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Advanced Robotics</h5>
+                    <p class="card-text text-muted">Innovative robots designed for various industries, enhancing automation, precision, and safety in manufacturing and healthcare sectors.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="product-card card shadow-sm rounded">
+                <img src="/img/SmartCitySolutions.jpg" class="card-img-top rounded-top" alt="Smart City Solutions">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Smart City Solutions</h5>
+                    <p class="card-text text-muted">Smart technologies for urban areas designed to improve infrastructure, transportation, energy management, and quality of life for citizens.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="product-card card shadow-sm rounded">
+                <img src="/img/BlockchainTechnology.jpg" class="card-img-top rounded-top" alt="Blockchain Technology">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Blockchain Technology</h5>
+                    <p class="card-text text-muted">Blockchain-based solutions to enhance transparency, security, and efficiency in industries like finance, healthcare, and logistics.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
 </div>
+
+<!-- CSS Styling -->
+<style>
+    .container {
+        max-width: 1200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: #666;
+    }
+
+    .btn {
+        background-color: #007bff;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-grid .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+</style>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

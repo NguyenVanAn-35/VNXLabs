@@ -1,17 +1,15 @@
 package com.example.vnxlabs.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @AllArgsConstructor
@@ -24,19 +22,24 @@ public class NguoiDung {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "ten_dang_nhap", nullable = false, unique = true)
-    private String tenDangNhap;
+    @NotEmpty
+    private String ten_dang_nhap;
 
-    @Column(name = "email", nullable = false, unique = true)
+    @Email
+    @NotEmpty
     private String email;
 
-    @Column(name = "mat_khau", nullable = false)
-    private String matKhau;
+    @NotEmpty
+    private String mat_khau;
 
-    @Column(name = "vai_tro")
-    private String vaiTro = "nguoi_dung";
+    private String vai_tro ;
 
+    @Temporal(TemporalType.DATE)
     @Column(name = "ngay_tao")
-    private LocalDateTime ngayTao = LocalDateTime.now();
+    private Date ngay_tao ;
+
+    @Temporal(TemporalType.DATE)
+    @Column(name = "ngay_cap_nhat")
+    private Date ngay_cap_nhat;
 
 }

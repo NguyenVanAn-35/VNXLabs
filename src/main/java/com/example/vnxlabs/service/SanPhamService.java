@@ -1,29 +1,28 @@
 package com.example.vnxlabs.service;
 
 import com.example.vnxlabs.entity.SanPham;
-import com.example.vnxlabs.service.impl.SanPhamService;
+import com.example.vnxlabs.repository.SanPhamRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
-public class SanPhamImpl implements SanPhamService {
-
-    @Override
+@Service
+public class SanPhamService{
+@Autowired
+private SanPhamRepository sanPhamRepository;
     public List<SanPham> findAll() {
-        return null;
+        return sanPhamRepository.findAll();
     }
 
-    @Override
     public Optional<SanPham> findById(Integer id) {
         return Optional.empty();
     }
 
-    @Override
     public SanPham save(SanPham sanPham) {
         return null;
     }
 
-    @Override
     public void deleteById(Integer id) {
 
     }

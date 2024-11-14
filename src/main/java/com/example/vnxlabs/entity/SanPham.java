@@ -39,10 +39,10 @@ public class SanPham {
     private String fileUrl;
 
     @Column(name = "ngay_tao")
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date createdDate;
 
+    @Temporal(TemporalType.DATE)
     @Column(name = "ngay_cap_nhat")
-    @Temporal(TemporalType.TIMESTAMP)
     private Date updatedDate;
 }

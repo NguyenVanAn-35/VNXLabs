@@ -1,11 +1,10 @@
 package com.example.vnxlabs.repository;
 
-import com.example.vnxlabs.entity.NguoiDung;
+import com.example.vnxlabs.entity.Portfolio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-
 @Repository
-public interface NguoiDungRepository extends JpaRepository<NguoiDung,Long> {
+public interface PortfolioRepository extends JpaRepository<Portfolio,Long> {
 
 }

@@ -94,23 +94,60 @@ footer .list-unstyled a {
 footer .list-unstyled a:hover {
     text-decoration: underline;
 }
+/* Navbar Custom Styling with Gradient Background */
 .navbar-custom {
-    background-color: #343a40; /* Màu nền của navbar */
+    background: linear-gradient(135deg, #0066cc, #0099ff); /* Hiệu ứng gradient màu xanh dương */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
 }
-.navbar-custom .nav-link {
-    color: #f8f9fa; /* Màu của các liên kết */
-}
-.navbar-custom .nav-link:hover {
-    color: #adb5bd; /* Màu khi hover */
-}
-.navbar-brand {
+
+.navbar-custom .navbar-brand {
     font-weight: bold;
-    color: #f8f9fa;
+    color: #ffffff;
+    font-size: 1.25rem;
 }
-.navbar-brand img {
-    width: 30px; /* Kích thước biểu tượng */
+
+.navbar-custom .navbar-brand img {
+    width: 40px;
     margin-right: 10px;
 }
+
+/* Navbar links styling */
+.navbar-custom .navbar-nav {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffdd57; /* Màu hover vàng nhạt */
+}
+
+.navbar-custom .nav-link.active {
+    color: #ffdd57; /* Màu vàng nhạt cho mục active */
+    font-weight: bold;
+}
+
+.navbar-custom .btn-custom {
+    background-color: #ffdd57; /* Nút Đăng Nhập màu vàng */
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom .btn-custom:hover {
+    background-color: #ffc107; /* Màu vàng sáng hơn khi hover */
+}
+
+
 .btn-custom {
     background-color: #007bff; /* Màu nền của nút */
     color: #ffffff; /* Màu chữ của nút */
@@ -256,3 +293,4 @@ footer .list-unstyled a:hover {
 .product-grid {
     margin-top: 20px;
 }
+
